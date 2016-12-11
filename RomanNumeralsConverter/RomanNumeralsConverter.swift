@@ -19,6 +19,15 @@ class RomanNumeralsConverter {
         if number >= 5 {
             return arabicToRoman[5]! + convert(number - 5)
         }
+        
+        if number == 4 {
+            return arabicToRoman[4]!
+        }
+        
+        if number >= 1 {
+            return arabicToRoman[1]! + convert(number - 1)
+        }
+        
         return arabicToRoman[number]!
     }
 }
