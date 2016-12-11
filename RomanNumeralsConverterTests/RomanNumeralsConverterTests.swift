@@ -16,16 +16,13 @@ class RomanNumeralsConverterShould: XCTestCase {
         super.setUp()
         converter = RomanNumeralsConverter()
     }
+    
+    func test_convertArabicNumberIntoRomanNumeral() {
+        let testableCases = [1:"I", 2:"II", 3:"III"]
+        
+        for (input, expected) in testableCases {
+            XCTAssertEqual(converter.convert(input), expected)
+        }
+    }
 
-    func test_convertOneIntoI() {
-        XCTAssertEqual(converter.convert(1), "I")
-    }
-    
-    func test_convertTwoIntoII() {
-        XCTAssertEqual(converter.convert(2), "II")
-    }
-    
-    func test_convertThreeIntoIII() {
-        XCTAssertEqual(converter.convert(3), "III")
-    }
 }
