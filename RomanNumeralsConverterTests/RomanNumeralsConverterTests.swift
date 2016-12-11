@@ -12,7 +12,7 @@ import XCTest
 class RomanNumeralsConverterShould: XCTestCase {
     func test_convertArabicNumberIntoRomanNumeral() {
         let converter = RomanNumeralsConverter()
-        let testableCases = [1:"I", 2:"II", 3:"III"]
+        let testableCases = [1:"I", 2:"II", 3:"III", 4: "IV"]
         
         for (input, expected) in testableCases {
             XCTAssertEqual(converter.convert(input), expected)
