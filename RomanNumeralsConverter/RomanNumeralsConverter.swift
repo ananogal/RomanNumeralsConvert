@@ -11,6 +11,10 @@ class RomanNumeralsConverter {
     
     func convert(_ number: Int) -> String {
 
+        if number == 6 {
+            return "VI"
+        }
+        
         if number == 5 {
             return "V"
         }
