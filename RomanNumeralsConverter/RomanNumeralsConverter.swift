@@ -10,8 +10,15 @@ import Foundation
 class RomanNumeralsConverter {
     
     func convert(_ number: Int) -> String {
-        let arabicToRoman = [1: "I", 2:"II", 3:"III", 4:"IV", 5:"V", 6:"VI", 7:"VII", 8:"VIII"]
+        if number == 0 {
+            return ""
+        }
         
+        let arabicToRoman = [1: "I", 2:"II", 3:"III", 4:"IV", 5:"V"]
+        
+        if number >= 5 {
+            return arabicToRoman[5]! + convert(number - 5)
+        }
         return arabicToRoman[number]!
     }
 }
