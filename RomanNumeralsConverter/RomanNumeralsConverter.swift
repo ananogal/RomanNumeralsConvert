@@ -14,7 +14,11 @@ class RomanNumeralsConverter {
             return ""
         }
         
-        let arabicToRoman = [1: "I", 2:"II", 3:"III", 4:"IV", 5:"V"]
+        let arabicToRoman = [1: "I", 4:"IV", 5:"V", 9:"IX"]
+        
+        if number == 9 {
+            return arabicToRoman[9]!
+        }
         
         if number >= 5 {
             return arabicToRoman[5]! + convert(number - 5)
