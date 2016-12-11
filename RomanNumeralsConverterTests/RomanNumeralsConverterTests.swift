@@ -10,14 +10,8 @@ import XCTest
 @testable import RomanNumeralsConverter
 
 class RomanNumeralsConverterShould: XCTestCase {
-    var converter: RomanNumeralsConverter!
-    
-    override func setUp() {
-        super.setUp()
-        converter = RomanNumeralsConverter()
-    }
-    
     func test_convertArabicNumberIntoRomanNumeral() {
+        let converter = RomanNumeralsConverter()
         let testableCases = [1:"I", 2:"II", 3:"III"]
         
         for (input, expected) in testableCases {
