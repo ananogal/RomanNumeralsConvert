@@ -10,6 +10,11 @@ import Foundation
 class RomanNumeralsConverter {
     
     func convert(_ number: Int) -> String {
+
+        if number == 5 {
+            return "V"
+        }
+        
         if number == 4 {
             return "IV"
         }
