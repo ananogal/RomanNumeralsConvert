@@ -10,10 +10,16 @@ import XCTest
 @testable import RomanNumeralsConverter
 
 class RomanNumeralsConverterShould: XCTestCase {
+    
     func test_convertOneIntoI() {
         let converter = RomanNumeralsConverter()
         
         XCTAssertEqual(converter.convert(1), "I")
     }
-
+    
+    func test_convertTwoIntoII() {
+        let converter = RomanNumeralsConverter()
+        
+        XCTAssertEqual(converter.convert(2), "II")
+    }
 }
