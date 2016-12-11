@@ -22,4 +22,10 @@ class RomanNumeralsConverterShould: XCTestCase {
         
         XCTAssertEqual(converter.convert(2), "II")
     }
+    
+    func test_convertThreeIntoIII() {
+        let converter = RomanNumeralsConverter()
+        
+        XCTAssertEqual(converter.convert(3), "III")
+    }
 }
