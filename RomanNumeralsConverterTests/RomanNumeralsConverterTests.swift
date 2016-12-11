@@ -10,22 +10,22 @@ import XCTest
 @testable import RomanNumeralsConverter
 
 class RomanNumeralsConverterShould: XCTestCase {
+    var converter: RomanNumeralsConverter!
     
+    override func setUp() {
+        super.setUp()
+        converter = RomanNumeralsConverter()
+    }
+
     func test_convertOneIntoI() {
-        let converter = RomanNumeralsConverter()
-        
         XCTAssertEqual(converter.convert(1), "I")
     }
     
     func test_convertTwoIntoII() {
-        let converter = RomanNumeralsConverter()
-        
         XCTAssertEqual(converter.convert(2), "II")
     }
     
     func test_convertThreeIntoIII() {
-        let converter = RomanNumeralsConverter()
-        
         XCTAssertEqual(converter.convert(3), "III")
     }
 }
