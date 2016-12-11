@@ -16,20 +16,12 @@ class RomanNumeralsConverter {
         
         let arabicToRoman = [1: "I", 4:"IV", 5:"V", 9:"IX", 10: "X"]
         
-        if number == 10 {
-            return arabicToRoman[10]!
-        }
-        
-        if number == 9 {
-            return arabicToRoman[9]!
+        if let roman = arabicToRoman[number] {
+            return roman
         }
         
         if number >= 5 {
             return arabicToRoman[5]! + convert(number - 5)
-        }
-        
-        if number == 4 {
-            return arabicToRoman[4]!
         }
         
         if number >= 1 {
