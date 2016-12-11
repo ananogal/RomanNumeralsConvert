@@ -10,7 +10,7 @@ import Foundation
 class RomanNumeralsConverter {
     
     func convert(_ number: Int) -> String {
-        let arabicToRoman = [(1, "I"), (4,"IV"), (5,"V"), (9,"IX"), (10, "X")]
+        let arabicToRoman = [(1, "I"), (4,"IV"), (5,"V"), (9,"IX"), (10, "X"), (40, "XL")]
         
         for (arabic, roman) in arabicToRoman.reversed() {
             if number >= arabic {
