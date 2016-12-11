@@ -10,6 +10,7 @@
 		932058AC1DFD8E18003F37FE /* RomanNumeralsConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 932058A21DFD8E18003F37FE /* RomanNumeralsConverter.framework */; };
 		932058B11DFD8E18003F37FE /* RomanNumeralsConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932058B01DFD8E18003F37FE /* RomanNumeralsConverterTests.swift */; };
 		932058B31DFD8E18003F37FE /* RomanNumeralsConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 932058A51DFD8E18003F37FE /* RomanNumeralsConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		932058BD1DFD8EB2003F37FE /* RomanNumeralsConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932058BC1DFD8EB2003F37FE /* RomanNumeralsConverter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		932058AB1DFD8E18003F37FE /* RomanNumeralsConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RomanNumeralsConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		932058B01DFD8E18003F37FE /* RomanNumeralsConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanNumeralsConverterTests.swift; sourceTree = "<group>"; };
 		932058B21DFD8E18003F37FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		932058BC1DFD8EB2003F37FE /* RomanNumeralsConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RomanNumeralsConverter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				932058A51DFD8E18003F37FE /* RomanNumeralsConverter.h */,
 				932058A61DFD8E18003F37FE /* Info.plist */,
+				932058BC1DFD8EB2003F37FE /* RomanNumeralsConverter.swift */,
 			);
 			path = RomanNumeralsConverter;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 					932058A11DFD8E18003F37FE = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = Q4U65SGLQ4;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					932058AA1DFD8E18003F37FE = {
@@ -198,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932058BD1DFD8EB2003F37FE /* RomanNumeralsConverter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +327,7 @@
 		932058B71DFD8E18003F37FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q4U65SGLQ4;
@@ -334,6 +340,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.codurance.RomanNumeralsConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +348,7 @@
 		932058B81DFD8E18003F37FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = Q4U65SGLQ4;
@@ -360,6 +368,7 @@
 		932058BA1DFD8E18003F37FE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q4U65SGLQ4;
 				INFOPLIST_FILE = RomanNumeralsConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -372,6 +381,7 @@
 		932058BB1DFD8E18003F37FE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q4U65SGLQ4;
 				INFOPLIST_FILE = RomanNumeralsConverterTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
