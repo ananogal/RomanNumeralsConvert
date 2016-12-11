@@ -20,7 +20,9 @@ class RomanNumeralsConverter {
             return roman
         }
         
-        
+        if number > 10 {
+            return arabicToRoman[10]! + convert(number - 10)
+        }
         
         if number > 5 {
             return arabicToRoman[5]! + convert(number - 5)
