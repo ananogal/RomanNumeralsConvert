@@ -10,28 +10,14 @@ import Foundation
 class RomanNumeralsConverter {
     
     func convert(_ number: Int) -> String {
-        if number == 0 {
-            return ""
+        let arabicToRoman = [(1, "I"), (4,"IV"), (5,"V"), (9,"IX"), (10, "X")]
+        
+        for (arabic, roman) in arabicToRoman.reversed() {
+            if number >= arabic {
+                return roman + convert(number - arabic)
+            }
         }
         
-        let arabicToRoman = [1: "I", 4:"IV", 5:"V", 9:"IX", 10: "X"]
-        
-        if let roman = arabicToRoman[number] {
-            return roman
-        }
-        
-        if number > 10 {
-            return arabicToRoman[10]! + convert(number - 10)
-        }
-        
-        if number > 5 {
-            return arabicToRoman[5]! + convert(number - 5)
-        }
-        
-        if number > 1 {
-            return arabicToRoman[1]! + convert(number - 1)
-        }
-        
-        return arabicToRoman[number]!
+        return ""
     }
 }
